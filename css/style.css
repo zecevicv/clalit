@@ -1,0 +1,368 @@
+/* #Fonts
+================================================== */
+@font-face {
+  font-family: "ploni";
+  font-weight: 200;
+  src: url("../font/ploni-light-aaa.woff2");
+}
+
+@font-face {
+  font-family: "ploni";
+  font-weight: 400;
+  src: url("../font/ploni-regular-aaa.woff2");
+}
+
+@font-face {
+  font-family: "ploni";
+  font-weight: 500;
+  src: url("../font/ploni-demibold-aaa.woff2");
+}
+
+@font-face {
+  font-family: "ploni";
+  font-weight: 700;
+  src: url("../font/ploni-ultrabold-aaa.woff2");
+}
+
+/* #Global
+================================================== */
+body {
+  font-family: 'ploni', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* #Banner
+================================================== */
+.banner {
+  position: relative;
+}
+
+.banner .bg img {
+  width: 100%;
+  height: 35vw;
+}
+
+.banner .container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+.banner .video {
+  position: relative;
+  margin: .5vw 0;
+}
+
+.banner video {
+  width: 45.2vw;
+  height: 27.3vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner .video a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner .video a img {
+  width: 5.2vw;
+}
+
+.banner .logo img {
+  margin: 0 auto;
+  width: 8.1vw;
+}
+
+@media (max-width: 1023.98px) {
+  .banner {
+    position: relative;
+  }
+  
+  .banner .bg img {
+    height: 15vw;
+  }
+  
+  .banner .container {
+    position: static;
+    transform: none;
+  }
+  
+  .banner .video {
+    margin: 0;
+  }
+  
+  .banner video {
+    width: 100%;
+    height: 73.33vw;
+  }
+  
+  .banner .video a img {
+    width: 15vw;
+  }
+
+  .banner h1 {
+    position: absolute;
+    bottom: 3vw;
+    left: 0;
+    width: 100%;
+  }
+
+  .banner .logo {
+    position: absolute;
+    top: 3.33vw;
+    right: 3.33vw;
+  }
+  
+  .banner .logo img {
+    width: 18.66vw;
+  }
+}
+
+/* #Footer
+================================================== */
+.footer {
+  text-align: center;
+  color: #213d79;
+  padding: .5vw 0 .78vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .footer {
+    padding: 2vw 0;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact {
+  padding: 1.5vw 0;
+  text-align: center;
+  background-color: #e1e1e1;
+}
+
+.contact .container {
+  width: 35.3%;
+}
+
+.contact h2 {
+  line-height: 1;
+  margin-bottom: 1.8vw;
+  color: #123985;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact form > div {
+  flex: 0 0 47%;
+  margin-bottom: .78vw;
+}
+
+.contact form > div:last-child {
+  flex: 0 0 100%;
+  margin-top: 1.8vw;
+}
+
+.contact input {
+  width: 100%;
+  height: 2vw;
+  padding: 0 .6vw;
+  background-color: white;
+  color: #123985;
+  border: none;
+  font-family: inherit;
+}
+
+.contact input::placeholder {
+  color: #123985;
+}
+
+.contact select {
+  width: 100%;
+  height: 2vw;
+  padding: 0 .6vw;
+  background-color: white;
+  color: #123985;
+  border: none;
+  appearance: none;
+  font-family: inherit;
+  background-image: url('../img/icons/chevron-down.png');
+  background-repeat: no-repeat;
+  background-position: .78vw 50%;
+  background-size: .78vw auto;
+}
+
+.contact button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 2.6vw;
+  border-radius: 500px;
+  border: none;
+  color: white;
+  background-color: #00667d;
+  padding: 0 2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    padding: 2.66vw 0;
+  }
+  
+  .contact .container {
+    width:71%;
+  }
+  
+  .contact h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .contact form {
+    display: block;
+  }
+  
+  .contact form > div {
+    margin-bottom: 2vw;
+  }
+  
+  .contact form > div:last-child {
+    margin-top: 6.65vw;
+  }
+  
+  .contact input {
+    height: 8vw;
+    padding: 0 4vw;
+  }
+  
+  .contact select {
+    height: 8vw;
+    padding: 0 4vw;
+    background-position: 4vw 50%;
+    background-size: 4vw auto;
+  }
+  
+  .contact button {
+    height: 8vw;
+    padding: 0 5.33vw;
+  }
+}
+
+/* #Cards
+================================================== */
+.cards {
+  padding: 1.5vw 0;
+  text-align: center;
+}
+
+.cards .container {
+  width: 47%;
+}
+
+.cards h2 {
+  margin-bottom: 1vw;
+  line-height: 1;
+  color: #123985;
+}
+
+.cards h2 span {
+  color: #00667d;
+}
+
+.cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -1.3vw -3.65vw;
+}
+
+.cards li {
+  flex: 0 0 33.3333%;
+  padding: 1.3vw 3.65vw;
+  color: white;
+}
+
+.cards li a {
+  position: relative;
+  display: block;
+}
+
+.cards .text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4.75vw;
+  line-height: 1.1;
+  width: 90%;
+}
+
+@media (max-width: 1023.98px) {
+  .cards {
+    padding: 5.33vw 0 10.66vw 0;;
+  }
+  
+  .cards .container {
+    width: 72%;
+  }
+  
+  .cards h2 {
+    margin-bottom: 4vw;
+  }
+  
+  .cards ul {
+    margin: -1.3vw -4vw;
+  }
+  
+  .cards li {
+    flex: 0 0 50%;
+    padding: 1.3vw 4vw;
+  }
+  
+  .cards .text {
+    top: 14.75vw;
+  }
+}
+
+/* #Video Popup
+================================================== */
+.video-popup {
+  padding: 0 16.5%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.video-popup .popup-close {
+  margin-bottom: 1vw;
+  border-radius: 50%;
+}
+
+.video-popup .popup-close img {
+  width: 3.12vw;
+}
+
+@media (max-width: 1023.98px) {
+  .video-popup {
+    padding: 0 4%;
+  }
+  
+  .video-popup .popup-close {
+    margin-bottom: 2vw;
+  }
+  
+  .video-popup .popup-close img {
+    width: 7.34vw;
+  }
+}
