@@ -23,27 +23,31 @@
 
   <!-- Banner -->
   <div class="banner">
-    <div class="container">
-      <h1 class="f-d-48 f-m-52">החיים שלכם הֶקטִיק הֶקטִיק הֶקטִיק?!</h1>
-      <!-- Video -->
-      <div class="video">
-        <video src="video/video.mp4" type="video/mp4" frameborder="0" loop autoplay muted playsinline></video>
-        <a href="#" class="popup-toggler" data-popup="#videoPopup">
-          <img src="img/icons/play.png" alt="clalit-img">
-        </a>
-      </div>
-      <!-- Logo -->
-      <div class="logo">
-        <img src="img/global/logo.png" alt="clalit-img">
-      </div>
+    <!-- Img -->
+    <div class="img">
+      <picture>
+        <source media="(min-width:1024px)" srcset="img/home/desktop.gif">
+        <img src="img/home/mobile.gif" alt="clalit-img">
+      </picture>
     </div>
-    <div class="bg">
-      <img src="img/home/banner-bg.jpg" alt="clalit-img">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="img/global/logo.png" alt="clalit-img">
     </div>
   </div>
 
   <!-- Cards -->
   <div class="cards">
+    <h2 class="f-d-42 f-m-42">
+      אתם לא היחידים שחיים בסרט הזה. צפו:
+    </h2>
+    <!-- Video -->
+    <div class="video">
+      <img src="img/home/video.jpg" alt="clalit-img">
+      <a href="#" class="popup-toggler" data-popup="#videoPopup">
+        <img src="img/icons/play.png" alt="clalit-img">
+      </a>
+    </div>
     <div class="container">
       <h2 class="f-d-48 f-m-42">
         לתל־אביב יש כללית משלה
@@ -171,15 +175,14 @@
         </div>
       </form>
     </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="f-d-16 f-m-16">
+        *ללקוחות בתוכנית כללית מושלם זהב.
+        <br>**ללקוחות בתוכנית כללית מושלם פלטינום.
+      </p>
+    </footer>
   </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p class="f-d-16 f-m-16">
-      *ללקוחות בתוכנית כללית מושלם זהב.
-      <br>**ללקוחות בתוכנית כללית מושלם פלטינום.
-    </p>
-  </footer>
 
   <!-- Video Popup -->
   <div class="popup video-popup" id="videoPopup">
